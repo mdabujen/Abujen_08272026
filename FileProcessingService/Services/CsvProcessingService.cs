@@ -116,7 +116,8 @@ namespace FileProcessingService.Services
             var average = values.Average();
 
             _logger.LogInformation(
-                $"Processed CSV: {rows.Count} rows, column '{columnName}, average {average}");
+                "Processed CSV: {RowCount} rows, column '{Column}', average {Average}",
+                rows.Count, columnName, average);
 
             return new CsvProcessingResult
             {

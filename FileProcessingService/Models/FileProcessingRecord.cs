@@ -4,6 +4,7 @@
     {
         public Guid Id { get; init; } = Guid.NewGuid();
         public string FileName { get; init; } = string.Empty;
+        public long FileSizeBytes { get; init; }
         public int RowsProcessed { get; init; }
         public string ColumnAnalyzed { get; init; } = string.Empty;
         public double CalculatedAverage { get; init; }
